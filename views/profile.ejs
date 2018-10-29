@@ -1,0 +1,75 @@
+<% include partials/header %>
+<button class="btn btn-pimary"><a href="/addprofile">Add Profile</a></button>
+
+<!-- form 2 for updating a hotel -->
+<div class="container" id="updateContainer">
+    <div class="row main">
+        <div class="panel-heading">
+            <div class="panel-title text-center">
+                <h1 class="title">Add Your Profile Details</h1>
+                <hr />
+            </div>
+        </div>
+        <div class=" main-login main-center">
+            <form class="form-horizontal" id="adding2" method="POST" action="/profile">
+                <div class="form-group">
+                    <label for="Image" class="cols-sm-2 control-label" id="id1">Give Image Url</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="image" id="image" placeholder="Image Url" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="name" class="cols-sm-2 control-label" id="id2">Enter name</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address" class="cols-sm-2 control-label" id="id3">Enter Addreess</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="address" id="address" placeholder="Enter address" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="number" class="cols-sm-2 control-label" id="id5">Enter Contact Number</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="number" id="number" placeholder="Enter Contact Number" />
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group ">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block login-button"> Submit </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<div class="content"></div>
+
+<script>
+    // S('#addR').hide();
+    $('#updateContainer').hide(); 
+</script>
+
+
+<script defer src="/public/javascripts/profile.js"></script>
+
+<% include partials/footer %>
