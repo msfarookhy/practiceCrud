@@ -1,13 +1,13 @@
 profile = [];
 profile.database = {};
-const loadAssets = function() {
-  $.getJSON("/myprofile/", function(data) {
+const loadAssets = function () {
+  $.getJSON("/myprofile/", function (data) {
     profile.database = data;
     profile.init();
   });
 };
 
-profile.init = function() {
+profile.init = function () {
   // profile.del();
   // profile.update();
   // profile.addR();
@@ -56,10 +56,10 @@ profile.init = function() {
 //   });
 // };
 
-profile.generateMarkup = function() {
+profile.generateMarkup = function () {
   var template = "";
 
-  $.each(profile.database, function(index) {
+  $.each(profile.database, function (index) {
     db = profile.database;
     id = db[index];
     //   console.log(id);
